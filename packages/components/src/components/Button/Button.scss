@@ -1,0 +1,103 @@
+@mixin button {
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0.875rem;
+  padding: 0 $componentSpacing-m;
+  overflow: hidden;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  transition: all 300ms ease-in-out;
+
+  &--primary {
+    background: $colors-saturatedSky;
+    border: 2px solid $colors-saturatedSky;
+    color: $colors-white;
+
+    &:hover:not(:disabled),
+    &:active:not(:disabled) {
+      background: $colors-brightGreek;
+      border: 2px solid $colors-brightGreek;
+    }
+
+    &.Button--outline {
+      border: 2px solid $colors-prestigeBlue;
+      background: transparent;
+      color: $colors-prestigeBlue;
+
+      &:hover:not(:disabled),
+      &:active:not(:disabled) {
+        background: $colors-brightGreek;
+        border: 2px solid $colors-brightGreek;
+        color: $colors-white;
+      }
+    }
+  }
+
+  &--secondary {
+    background: $colors-limeSoap;
+    border: 2px solid $colors-limeSoap;
+    color: $colors-white;
+
+    &:hover:not(:disabled),
+    &:active:not(:disabled) {
+      background: $colors-ufoGreen;
+      border: 2px solid $colors-ufoGreen;
+    }
+
+    &.Button--outline {
+      border: 2px solid $colors-limeSoap;
+      background: transparent;
+      color: $colors-prestigeBlue;
+
+      &:hover:not(:disabled),
+      &:active:not(:disabled) {
+        background: $colors-limeSoap;
+        border: 2px solid $colors-limeSoap;
+        color: $colors-white;
+      }
+    }
+  }
+
+  &--tertiary {
+    background: $colors-wildWatermelon;
+    border: 2px solid $colors-wildWatermelon;
+    color: $colors-white;
+
+    &:hover:not(:disabled),
+    &:active:not(:disabled) {
+      background: $colors-white;
+      border: 2px solid $colors-white;
+      color: $colors-prestigeBlue;
+    }
+
+    &.Button--outline {
+      border: 2px solid $colors-prestigeBlue;
+      background: transparent;
+      color: $colors-prestigeBlue;
+
+      &:hover:not(:disabled),
+      &:active:not(:disabled) {
+        background: $colors-white;
+        border: 2px solid $colors-white;
+        color: $colors-prestigeBlue;
+      }
+    }
+  }
+
+  &--small {
+    height: $componentSpacing-l;
+    padding: 0 $componentSpacing-s;
+  }
+
+  &:disabled {
+    background: $colors-peace;
+    border: 2px solid $colors-peace;
+    color: $colors-grisaille;
+    cursor: not-allowed;
+  }
+}
+
+.Button {
+  @include button;
+}

@@ -1,0 +1,61 @@
+.TextInput {
+  font-family: $typography-main;
+
+  &__error {
+    display: block;
+    font-size: 0.75rem;
+    margin-bottom: $componentSpacing-s;
+  }
+
+  &__label {
+    color: $colors-prestigeBlue;
+    display: block;
+    font-size: 0.75rem;
+    margin-bottom: $componentSpacing-xxs;
+  }
+
+  &__input {
+    border-radius: $inputs-borderRadius;
+    border: 1px solid $colors-prestigeBlue;
+    font-size: 0.875rem;
+    height: $inputs-height;
+    margin-bottom: $componentSpacing-s;
+    padding: 0 1rem;
+    width: 100%;
+    transition: all 300ms ease-in-out;
+
+    &:focus,
+    &:active {
+      border: 1px solid $colors-clearChill;
+      box-shadow: 0 4px 12px 0 $colors-frenchSkyBlue;
+      outline: none;
+    }
+  }
+
+  &--error {
+    .TextInput__error {
+      color: $colors-watermelon;
+    }
+
+    .TextInput__label {
+      color: $colors-watermelon;
+    }
+
+    .TextInput__input {
+      border-color: $colors-watermelon;
+      color: $colors-watermelon;
+      margin-bottom: $componentSpacing-xxs;
+    }
+  }
+
+  &--disabled {
+    .TextInput__label {
+      opacity: 0.4;
+    }
+
+    .TextInput__input {
+      background: $colors-prestigeBlue;
+      border: 1px solid $colors-prestigeBlue;
+    }
+  }
+}

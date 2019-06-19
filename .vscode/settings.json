@@ -1,0 +1,16 @@
+{
+  "window.title": "🌟 Mandalore UI Library ${dirty}${activeEditorMedium}",
+  "workbench.colorCustomizations": { "titleBar.activeBackground": "#5E6E46" },
+  "editor.formatOnSave": true,
+  "emojisense.languages": {
+    "markdown": true,
+    "plaintext": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "git-commit": true,
+    "jsx": true,
+    "javascript": true,
+    "typescript": true
+  }
+}

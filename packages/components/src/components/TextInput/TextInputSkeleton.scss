@@ -1,0 +1,7 @@
+.TextInputSkeleton {
+  border-radius: $inputs-borderRadius;
+  height: 1rem;
+  margin-bottom: $input-margin-bottom;
+  min-width: 400px;
+  @include skeleton;
+}

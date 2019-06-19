@@ -1,0 +1,22 @@
+.Card {
+  background: $colors-white;
+  border-radius: $cards-borderRadius;
+  color: $colors-prestigeBlue;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 200ms ease-in;
+  overflow: hidden;
+  position: relative;
+
+  &--outlined {
+    border: 1px solid $cards-borderColor;
+  }
+
+  &:hover {
+    box-shadow: $cards-boxShadowDimensions $colors-peace;
+  }
+}
+
+.CardContent {
+  padding: $componentSpacing-m;
+}

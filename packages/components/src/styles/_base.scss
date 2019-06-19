@@ -1,0 +1,19 @@
+@import "~@mandalore/design-tokens/dist/design-tokens";
+
+@mixin link {
+  text-decoration: none;
+  color: $colors-clearChill;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+body {
+  font-size: 1rem;
+  font-family: $typography-main;
+}
+
+img {
+  max-width: 100%;
+}

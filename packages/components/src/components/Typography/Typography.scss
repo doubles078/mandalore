@@ -1,0 +1,206 @@
+.Typography {
+  margin: 0 0 1rem;
+
+  &--align {
+    &-left {
+      text-align: left;
+    }
+    &-center {
+      text-align: center;
+    }
+    &-right {
+      text-align: right;
+    }
+  }
+
+  &--color {
+    &-primary {
+      color: $colors-prestigeBlue;
+    }
+    &-secondary {
+      color: $colors-grisaille;
+    }
+    &-tertiary {
+      color: $colors-peace;
+    }
+    &-link {
+      color: $colors-clearChill;
+    }
+  }
+
+  &--display1 {
+    font-family: $typography-main;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1.1;
+  }
+
+  &--display2 {
+    font-family: $typography-main;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.13;
+  }
+
+  &--header1 {
+    font-family: $typography-main;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.17;
+  }
+
+  &--header2 {
+    font-family: $typography-main;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.25;
+  }
+
+  &--header3 {
+    font-family: $typography-main;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.33;
+  }
+
+  &--header4 {
+    font-family: $typography-main;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  &--subheader {
+    font-family: $typography-main;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.33;
+  }
+  &--body1 {
+    font-family: $typography-main;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  &--body2 {
+    font-family: $typography-main;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  &--uilabel {
+    font-family: $typography-main;
+    font-size: 0.875rem; // 14px
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  &--uilabel-light {
+    font-family: $typography-main;
+    font-size: 0.875rem; // 14px
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  &--uilabel-bold {
+    font-family: $typography-main;
+    font-size: 0.875rem; // 14px
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  &--caption {
+    font-family: $typography-main;
+    font-size: 0.75rem; // 12px
+    font-weight: 500;
+    line-height: 1.33;
+  }
+}
+
+@media screen and (max-width: $breakpoints-sm) {
+  .Typography {
+    margin: 0 0 0.5rem;
+
+    &--display1 {
+      font-family: $typography-main;
+      font-size: 3.5rem;
+      font-weight: bold;
+      line-height: 1.14;
+    }
+
+    &--display2 {
+      font-family: $typography-main;
+      font-size: 2.5rem;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    &--header1 {
+      font-family: $typography-main;
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 1.25;
+    }
+
+    &--header2 {
+      font-family: $typography-main;
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 1.33;
+    }
+
+    &--header3 {
+      font-family: $typography-main;
+      font-size: 1.25rem;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    &--header4 {
+      font-family: $typography-main;
+      font-size: 1rem;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+
+    &--subheader {
+      font-family: $typography-main;
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.33;
+    }
+    &--body1 {
+      font-family: $typography-main;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    &--body2 {
+      font-family: $typography-main;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+    &--uilabel {
+      font-family: $typography-main;
+      font-size: 0.875rem; // 14px
+      font-weight: 300;
+      line-height: 1.5;
+    }
+    &--uilabel-light {
+      font-family: $typography-main;
+      font-size: 0.875rem; // 14px
+      font-weight: 300;
+      line-height: 1.5;
+    }
+    &--uilabel-bold {
+      font-family: $typography-main;
+      font-size: 0.875rem; // 14px
+      font-weight: bold;
+      line-height: 1.5;
+    }
+    &--caption {
+      font-family: $typography-main;
+      font-size: 0.75rem; // 12px
+      font-weight: 500;
+      line-height: 1.33;
+    }
+  }
+}

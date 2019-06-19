@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography overrides variant element with component prop 1`] = `
+<p
+  className="Typography Typography--display1"
+>
+  Some text
+</p>
+`;
+
+exports[`Typography renders an h4 element for display1 1`] = `
+<h4
+  className="Typography Typography--display1"
+>
+  Some text
+</h4>
+`;

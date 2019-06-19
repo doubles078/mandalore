@@ -1,0 +1,28 @@
+{
+  "name": "@mandalore/icons",
+  "version": "1.0.0",
+  "description": "SVG icons",
+  "main": "dist/icons.js",
+  "module": "dist/icons.js",
+  "types": "dist/modules/index.d.ts",
+  "scripts": {
+    "icons": "npx svgr --ext tsx -d ./src/icons ./src/svgs",
+    "index": "node build.js",
+    "build": "npm run icons&& npm run index&& webpack"
+  },
+  "author": "Dan Donohue & Joseph Martucci",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^10.12.10",
+    "@types/react": "^16.4.16",
+    "node-glob": "^1.2.0",
+    "ts-loader": "^5.2.1",
+    "typescript": "^3.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "@svgr/cli": "^4.1.0",
+    "react": "^16.5.2"
+  }
+}

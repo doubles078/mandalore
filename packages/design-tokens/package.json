@@ -1,0 +1,13 @@
+{
+  "name": "@mandalore/design-tokens",
+  "version": "1.0.0",
+  "description": "Base design variables which can be themed",
+  "main": "dist/design-tokens.js",
+  "style": "dist/design-tokens.scss",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "author": "Dan Donohue & Joseph Martucci",
+  "license": "ISC"
+}

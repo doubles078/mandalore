@@ -1,0 +1,15 @@
+.Link {
+  &:not(.Button) {
+    @include link;
+  }
+
+  &.Button {
+    line-height: 2.5;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    &--small {
+      line-height: 2;
+    }
+  }
+}
